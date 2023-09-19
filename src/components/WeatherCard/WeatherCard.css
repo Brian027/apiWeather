@@ -1,0 +1,44 @@
+.weatherCard {
+    background-color: #24353e;
+    border-radius: 20px;
+    width: 355px;
+    height: 485px;
+    filter: drop-shadow(10px 9px 70px rgba(36, 53, 62,0.4));
+    padding: 52px;
+}
+
+.weatherCard .headerCard {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.weatherCard .headerCard .imgWeatherStatus img {
+    width: 300px;
+    object-fit: cover;
+    filter: drop-shadow(10px 9px 70px rgba(36, 53, 62,0.4));
+}
+
+.weatherCard .bodyCard {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.weatherCard .bodyCard .cityAndTemp {
+    display: flex;
+    gap: .5rem;
+}
+
+.weatherCard .bodyCard .cityAndTemp p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.weatherCard .bodyCard .cityAndTemp span {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #fff;
+}
