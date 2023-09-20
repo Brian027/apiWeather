@@ -11,7 +11,7 @@ function WeatherCard() {
   const imgWeatherStatus = [
     {
       id: 1,
-      nom_img: 'Partly_cloudy',
+      nom_img: 'Ensoleillé',
       path: 'images/Partly_cloudy.png'
     },
     {
@@ -77,7 +77,16 @@ function WeatherCard() {
     <div className='weatherCard'>
       <div className="headerCard">
         <div className="imgWeatherStatus">
-          <img src={imgWeatherStatus[0].path} alt={imgWeatherStatus[0].nom_img} />
+          {
+            // Mettre une condition pour afficher l'image correspondant à l'état météorologique
+            imgWeatherStatus.map((img, index) => {
+              if (weather.weatherStatus === img.nom_img) {
+                return (
+                  <img src={img.path} alt={img.nom_img} key={index} />
+                )
+              }
+            })
+          }
         </div>
       </div>
       <div className="bodyCard">
@@ -86,7 +95,7 @@ function WeatherCard() {
           <span>{weather.temperature}°C</span>
         </div>
         <div className="wind">
-          <p>{weather.windSpeed} km/h</p> 
+          <p>Vent: <span>{weather.windSpeed} km/h</span></p> 
         </div>
         <div className="dayAndHours">
           <p>{weather.date}</p>

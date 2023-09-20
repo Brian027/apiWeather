@@ -1,0 +1,19 @@
+.btn.loginBtn {
+    background-color: #1f1f1f;
+    color: #fff;
+    border: none;
+    border-radius: 33px;
+    width: 100px;
+    height: 30px;
+    font-size: .8rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color .7s cubic-bezier(0.19, 1, 0.22, 1);
+    font-family: 'geologica';
+}
+
+.btn.loginBtn:hover {
+    background-color: #fff;
+    color: #1f1f1f;
+    border: 1px solid #1f1f1f;
+}

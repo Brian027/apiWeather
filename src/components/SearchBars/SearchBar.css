@@ -1,10 +1,8 @@
 .SearchContainer {
     border-radius: 33px;
-    padding: .25rem .5rem;
     width: 250px;
-    height: 40px;
+    height: 30px;
     display: flex;
-    justify-content: center;
     position: relative;
 }
 

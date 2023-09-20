@@ -2,8 +2,7 @@
 
 .headerContainer {
     max-width: 1300px;
-    margin: 2rem auto;
-    padding: 2rem 0;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -18,7 +17,6 @@
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
-    padding: 2rem 0;
 }
 
 .headerContainer .left .introHome {

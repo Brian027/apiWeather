@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/Header/Header'
+import Header from '../components/Headers/Header'
 
 function Accueil() {
   document.title = 'Weather App | Accueil'

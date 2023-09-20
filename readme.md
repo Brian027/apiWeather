@@ -2,49 +2,67 @@
 
 ## Description
 
-This is a simple API that returns the weather of a city. It uses the OpenWeatherMap API to get the weather data.
+C'est une API de météo conçue avec Node.js et Express.js.
+Recommandée pour les services météorologiques, les applications météorologiques.
 
-## Usage
+## Utilisation
 
-To use this API, you need to send a GET request to the following URL:
+Pour utiliser cette API, vous devez envoyer une requête GET à l'URL suivante:
 
 ```
-http://localhost:8080/api/weather?city=YOUR_CITY
+https://api-weather-run/api/apiWeather
 ```
 
-The response will be a JSON object with the following structure:
+La réponse sera un objet JSON avec la structure suivante :
 
 ```
 {
-    "city": "YOUR_CITY",
+    "date": "DATE",
+    "city": "Nom de la ville",
+    "country": "Nom du pays",
+    "description": "DESCRIPTION",
+    "minTemperature": "MIN_TEMPERATURE",
+    "maxTemperature": "MAX_TEMPERATURE",
     "temperature": "TEMPERATURE",
-    "description": "DESCRIPTION"
+    "windSpeed": "WIND_SPEED",
+    "weatherIndiceUV": "WEATHER_INDICE_UV",
+    "weatherPressure": "WEATHER_PRESSURE",
+    "weatherStatus": "WEATHER_STATUS",
+
 }
 ```
 
-## Example
+## Exemple
 
 ```
-http://localhost:8080/api/weather?city=London
+https://api-weather-run/api/apiWeather?city=London
 ```
 
-Response:
+Retourne:
 
 ```
 {
+    "date": "2020-04-20T18:00:00.000Z",
     "city": "London",
-    "temperature": "10.0",
-    "description": "clear sky"
+    "country": "GB",
+    "description": "light rain",
+    "minTemperature": 9.44,
+    "maxTemperature": 10.56,
+    "temperature": 10.56,
+    "windSpeed": 4.1,
+    "weatherIndiceUV": 0,
+    "weatherPressure": 1009,
+    "weatherStatus": "Rain"
 }
 ```
 
-## Author
+## Auteur
 
 - **Coupama Brian** - _Initial work_ - [bc_548]()
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+Ce projet est sous licence ``MIT License`` - voir le fichier [LICENSE.md](LICENSE.md) pour plus d'informations.
 
 ```
 

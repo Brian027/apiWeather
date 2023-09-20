@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import WeatherCard from '../WeatherCard/WeatherCard'
+import WeatherCard from '../WeatherCards/WeatherCard'
 import { Link } from 'react-router-dom'
 import logoWeather from '../../assets/icons/Weather-api.png'
 

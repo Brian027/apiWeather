@@ -1,7 +1,8 @@
 import Accueil from "./pages/Accueil";
-import {Routes, Route} from "react-router-dom";
 import Doc from "./pages/Doc";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbars/Navbar";
+import BackHome from "./back_office/pages/BackHome";
+import {Routes, Route} from "react-router-dom";
 import './styles/App.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/documentation" element={<Doc />} />
+        <Route path="/manageApi" element={<BackHome />} />
       </Routes>
     </div>
   );

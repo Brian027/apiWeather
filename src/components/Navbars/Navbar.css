@@ -47,3 +47,9 @@ nav ul li a:hover:after {
     transform: scale(1);
     transform-origin: left;
 }
+
+nav .callToAction {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
